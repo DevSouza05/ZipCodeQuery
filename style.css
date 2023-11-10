@@ -1,0 +1,65 @@
+/* CSS Document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+}
+
+/* CSS Variaveis */
+:root{
+    --ColorTitulo: dodgerblue;
+    --Border: #ccc;
+    --Background:black;
+    --BackgroundColor:white;
+
+}
+
+.defult{
+    font-family:Gotham,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+   
+}
+
+h1{
+    font-size: 35px;
+    width:fit-content;
+	color:var(ColorTitulo);
+	border-top: 1px solid var(--Border);
+	border-bottom: 1px solid var(--Border);
+}
+
+label{
+    font-size: bold;
+}
+
+button,input{
+    display: block;
+    margin-bottom: 25px;
+	padding: 15px;
+	border: none;
+}
+input {
+	border: 1px solid var(--Background);
+	border-radius: 10px;
+	width: 150px;
+}
+
+button	{
+	background-color: var(--ColorTitulo);
+	font-weight: bold;
+	border-radius: 10px;
+	color: var(--Border);
+}
+
+button:hover {
+	background-color:var(--Background);
+	color: var(--BackgroundColor);
+	transition: 0.5s;
+}
+
+button:active {
+	background-color: var(--BackgroundColor);
+	color: var(--Background);
+}
